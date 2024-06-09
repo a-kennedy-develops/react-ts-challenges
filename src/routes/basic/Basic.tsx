@@ -1,4 +1,6 @@
 import Challenge from "../../components/Challenge";
+import { Seperator } from "../../components/Seperator";
+import GetCatFacts from "./challenges/GetCatFacts";
 import TodoList from "./challenges/TodoList";
 
 const Basic = () => {
@@ -11,6 +13,13 @@ const Basic = () => {
           be added, edited, and removed."
       >
         <TodoList />
+      </Challenge>
+      <Seperator />
+      <Challenge
+        title="API Get Request"
+        description="Fetch cat facts from an API (without axios)."
+      >
+        <GetCatFacts />
       </Challenge>
     </div>
   );
