@@ -3,7 +3,7 @@ import { Seperator } from "../../components/Seperator";
 import GetCatFacts from "./challenges/GetCatFacts";
 import TodoList from "./challenges/TodoList";
 
-const Basic = () => {
+export function Basic () {
   return (
     <>
       <h1 className="text-4xl font-bold mb-6">Basic Challenges</h1>
@@ -23,6 +23,4 @@ const Basic = () => {
       </Challenge>
     </>
   );
-};
-
-export default Basic;
+}

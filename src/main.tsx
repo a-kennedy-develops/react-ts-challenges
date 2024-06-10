@@ -3,8 +3,9 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import Home from "./routes/home/Home.tsx";
-import Basic from "./routes/basic/Basic.tsx";
 import { Layout } from "./components/Layout.tsx";
+import { Basic } from "./routes/basic/Basic.tsx";
+import { Intermediate } from "./routes/intermediate/Intermediate.tsx";
 
 const router = createBrowserRouter([
   {
@@ -20,7 +21,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/intermediate",
-        element: <div>Intermediate challenges</div>,
+        element: <Intermediate />
       },
       {
         path: "/advanced",
