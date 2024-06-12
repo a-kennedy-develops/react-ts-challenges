@@ -27,6 +27,10 @@ const router = createBrowserRouter([
         path: "/advanced",
         element: <div>Advanced challenges</div>,
       },
+      {
+        path: "leetcode",
+        element: <div>LeetCode challenges</div>,
+      }
     ],
   },
 ]);

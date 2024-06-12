@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import { NavLink, Outlet } from "react-router-dom";
+import { ROUTES } from "../utils/constants";
 
 export function Layout() {
   return (
@@ -7,40 +8,32 @@ export function Layout() {
       <nav className="flex p-7">
         <div className="mr-auto w-2/3">
           <NavLink
-            to="/"
+            to={ROUTES[0].path}
             className={({ isActive }) =>
               clsx("hover:text-blue-600 font-bold", isActive && "text-blue-600")
             }
           >
-            Home
+            {ROUTES[0].name}
           </NavLink>
         </div>
 
         <div className="flex justify-between w-1/3">
-          <NavLink
-            to="/basic"
-            className={({ isActive }) =>
-              clsx("hover:text-blue-600 font-bold", isActive && "text-blue-600")
-            }
-          >
-            Basic
-          </NavLink>
-          <NavLink
-            to="/intermediate"
-            className={({ isActive }) =>
-              clsx("hover:text-blue-600 font-bold", isActive && "text-blue-600")
-            }
-          >
-            Intermediate
-          </NavLink>
-          <NavLink
-            to="/advanced"
-            className={({ isActive }) =>
-              clsx("hover:text-blue-600 font-bold", isActive && "text-blue-600")
-            }
-          >
-            Advanced
-          </NavLink>
+          {ROUTES.map((route, index) => {
+            if (index !== 0)
+              return (
+                <NavLink
+                  to={route.path}
+                  className={({ isActive }) =>
+                    clsx(
+                      "hover:text-blue-600 font-bold",
+                      isActive && "text-blue-600"
+                    )
+                  }
+                >
+                  {route.name}
+                </NavLink>
+              );
+          })}
         </div>
       </nav>
       <main className="flex px-7 pt-10 justify-center">
