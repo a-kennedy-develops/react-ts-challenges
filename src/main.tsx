@@ -6,6 +6,7 @@ import Home from "./routes/home/Home.tsx";
 import { Layout } from "./components/Layout.tsx";
 import { Basic } from "./routes/basic/Basic.tsx";
 import { Intermediate } from "./routes/intermediate/Intermediate.tsx";
+import { Leetcode } from "./routes/leetcode/Leetcode.tsx";
 
 const router = createBrowserRouter([
   {
@@ -29,7 +30,7 @@ const router = createBrowserRouter([
       },
       {
         path: "leetcode",
-        element: <div>LeetCode challenges</div>,
+        element: <Leetcode />,
       }
     ],
   },
