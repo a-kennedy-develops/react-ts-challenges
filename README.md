@@ -1,6 +1,15 @@
 # React + TypeScript + Vite
 
-This project serves as a practice ground for mastering common React and TypeScript coding challenges at various difficulty levels. As you progress, you'll enhance the app's styling and organization.
+This project serves as a practice ground for mastering common React and TypeScript coding challenges at various difficulty levels. I plan to enhance the app's styling and organization as more challenges are added.
+
+# TODO
+
+[ ] Add some advanced challenges
+[ ] Style the pages to more aesthetically pleasing
+- [X] Add minimal navbar styling
+- [ ] Add better organization / styling for home page
+- [ ] Add better organization / styling for challenge pages
+[ ] Add toggleable code section for Challenge components, showcasing the code used for the solution
 
 ## Getting Started
 
@@ -44,10 +53,6 @@ To set up and run the application:
      ```
 
    This will start the development server, typically accessible at `http://localhost:5173/` by default (the exact port might vary slightly). You can then view the app in your web browser.
-
-**Development:**
-
-While the development server is running, any changes you make to the code will be automatically reflected in the browser, speeding up your development workflow.
 
 **Building for Production:**
 
