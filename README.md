@@ -4,12 +4,11 @@ This project serves as a practice ground for mastering common React and TypeScri
 
 # TODO
 
-[ ] Add some advanced challenges
-[ ] Style the pages to more aesthetically pleasing
+- [ ] Add some advanced challenges
 - [X] Add minimal navbar styling
-- [ ] Add better organization / styling for home page
-- [ ] Add better organization / styling for challenge pages
-[ ] Add toggleable code section for Challenge components, showcasing the code used for the solution
+- [ ] Add better organization/styling for the home page
+- [ ] Add better organization/styling for challenge pages
+- [ ] Add toggleable code section for Challenge components, showcasing the code used for the solution
 
 ## Getting Started
 
