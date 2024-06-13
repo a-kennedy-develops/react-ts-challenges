@@ -26,9 +26,9 @@ export function Intermediate() {
           strings={["Zebra", "Apple", "Banana", "Carrot"]}
           numbers={[5, 3, 1, 4, 2]}
           dates={[
-            new Date("2021-01-01"),
-            new Date("2021-01-02"),
-            new Date("2021-01-03"),
+            new Date("2021-01-01T00:00:00"),
+            new Date("2020-05-02T00:00:00"),
+            new Date("2021-01-03T00:00:00"),
           ]}
         />
       </Challenge>

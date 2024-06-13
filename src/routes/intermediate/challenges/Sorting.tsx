@@ -29,7 +29,7 @@ const Sorting = ({ strings, numbers, dates }: SortingProps) => {
     const sortedNumbers = [...numbers].sort();
     setSortedNumbers(sortedNumbers);
 
-    const sortedDates = [...dates].sort();
+    const sortedDates = [...dates].sort((a, b) =>  a.getTime() - b.getTime());
     setSortedDates(sortedDates);
   }, [strings, numbers, dates]);
 
@@ -40,7 +40,7 @@ const Sorting = ({ strings, numbers, dates }: SortingProps) => {
     const sortedNumbers = [...numbers].sort((a, b) => b - a);
     setSortedNumbers(sortedNumbers);
 
-    const sortedDates = [...dates].sort((a, b) => b.getTime() - a.getTime());
+    const sortedDates = [...dates].sort((a, b) =>  b.getTime() - a.getTime());
     setSortedDates(sortedDates);
   }, [strings, numbers, dates]);
 

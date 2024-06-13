@@ -9,6 +9,7 @@ This project serves as a practice ground for mastering common React and TypeScri
 - [ ] Add better organization/styling for the home page
 - [ ] Add better organization/styling for challenge pages
 - [ ] Add toggleable code section for Challenge components, showcasing the code used for the solution
+- [ ] Add unit tests
 
 ## Getting Started
 
