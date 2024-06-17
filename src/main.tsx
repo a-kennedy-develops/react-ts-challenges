@@ -7,29 +7,30 @@ import { Layout } from "./components/Layout.tsx";
 import { Basic } from "./routes/basic/Basic.tsx";
 import { Intermediate } from "./routes/intermediate/Intermediate.tsx";
 import { Leetcode } from "./routes/leetcode/Leetcode.tsx";
+import { ROUTES } from "./utils/constants.tsx";
 
 const router = createBrowserRouter([
   {
     element: <Layout />,
     children: [
       {
-        path: "/",
+        path: ROUTES[0].path,
         element: <Home />,
       },
       {
-        path: "/basic",
+        path: ROUTES[1].path,
         element: <Basic />,
       },
       {
-        path: "/intermediate",
+        path: ROUTES[2].path,
         element: <Intermediate />
       },
       {
-        path: "/advanced",
+        path: ROUTES[3].path,
         element: <div>Advanced challenges</div>,
       },
       {
-        path: "leetcode",
+        path: ROUTES[4].path,
         element: <Leetcode />,
       }
     ],
